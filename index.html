@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - TAOUEMA Eliakim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin: 15px 0 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background: #0078d7;
+            color: white;
+        }
+
+        button {
+            background: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio - TAOUEMA Eliakim</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>Bonjour, je suis Eliakim, développeur web. Voici quelques projets qui illustrent mes compétences et mon expertise.</p>
+            <button onclick="showMessage()">Contactez-moi</button>
+        </div>
+
+        <div class="projects">
+            <div class="project">
+                <img src="img/Tvpro_logo.jpg" alt="Project 1">
+                <h3>Projet 1</h3>
+                <h4>Site de recommandation de téléviseurs - TV Pro Sélection</h4>
+                <button onclick="window.open('https://tvproselection.wordpress.com', '_blank')">Voir le site</button>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Projet 2</h3>
+                <p>Une application web pour gérer des tâches quotidiennes.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Project 3">
+                <h3>Projet 3</h3>
+                <p>Un portfolio interactif.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 TAOUEMA Eliakim. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Merci de me contacter à eliakimeliakim651@gmail.com");
+        }
+    </script>
+</body>
+</html>
